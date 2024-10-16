@@ -92,6 +92,90 @@ fuse.jsをそのまま使用し続ける方法とfuse.jsを使用せずに工夫
     2. `thoreshold` を 0.6 から下げる
 2. tagsのみに対して単純な完全一致検索
 
+まず，前回の打ち合わせで教えていただいた，mecabの辞書を新しくする方法を試しました．
+
+### 5. Neologd辞書を使用
+
+辞書の種類がいくつかあると知ったので，どれが新しくて単語を適切に分割できるか調べました（[1](https://qiita.com/hi-asano/items/aaf406db875f1c81530e)）
+
+**NEologd** について次のような説明があったため，仕様を決めました．
+
+> Web上のあらゆる新語が追加された巨大な辞書です。今もなお頻繁に更新されています。Twitterデータなどを解析するときの助けになります。
+
+使い方は，[こちら](https://zenn.dev/robes/articles/e17e298d0b0b9a)の記事を参考にしました．
+[Googleコラボ](https://colab.research.google.com/drive/1MU4jH1jmMj6w003-ZwTQ4WhI_RtMUD76?usp=sharing)のリンクです．
+
+結果は次のように “国内総生産”や “季節調整値” のように以前なら分割されていた単語が一つにまとまりました．次項では，このタグデータを使用して，パラメータの調整を行なっていきます．
+
+```
+[
+  {
+    "title": "（季節調整値）国内総生産（支出側）（名目）2015年基準, 単位: 10億円",
+    "titleEnglish": "(Seasonally adjusted value) Gross domestic product (expenditure side) (nominal) 2015 base, unit: billion yen",
+    "tags": [
+      "季節調整値",
+      "国内総生産",
+      "支出",
+      "側",
+      "名目",
+      "2015年",
+      "基準",
+      "単位",
+      "10億円",
+      "Seasonally",
+      "adjusted",
+      "value",
+      "Gross",
+      "domestic",
+      "product",
+      "expenditure",
+      "side",
+      "nominal",
+      "2015",
+      "base",
+      "billion",
+      "yen"
+    ]
+ },
+```
+
+### 6. fuse.js のパラメータ調整
+
+次の単語について検索精度を調べることにします．
+
+- 日本語
+    - 国内総生産
+    - 現金給与総額
+    - 完全失業率
+    - 総人口
+    - 研究費
+    - 科学技術研究費
+    - コールレート
+    - 鉱業生産指数
+    - 日経平均株価
+    - 食料自給率
+- 英語
+    - seasonally adjusted
+    - gross domestic product
+    - population
+    - unemployed
+    - call rate
+    - rate
+    - Nikkei
+- tagsに存在しない語や誤字を含む日本語
+    - 国内総支出
+    - 現金給与合計
+    - 日経平均の株価
+    - 科学 技術 研究費
+    - 食料自足
+- tags に存在しない語や誤字を含む英語
+    - GDP
+    - salaly
+    - unemproyd
+    - mean stock
+
+検証した結果は[スプレッドシート](https://docs.google.com/spreadsheets/d/1Bcafl-iCsFW9hDp1X4r4UfJdVflCeRbePHASToL9O6k/edit?usp=sharing)にまとめました．
+
 ## 参考記事
 
 - https://www.yoheim.net/blog.php?q=20191105

@@ -1,0 +1,184 @@
+[
+  {
+    "title": "（季節調整値）国内総生産（支出側）（名目）2015年基準, 単位: 10億円",
+    "titleEnglish": "(Seasonally adjusted value) Gross domestic product (expenditure side) (nominal) 2015 base, unit: billion yen",
+    "tags": [
+      "季節調整値",
+      "国内総生産",
+      "支出",
+      "側",
+      "名目",
+      "2015年",
+      "基準",
+      "単位",
+      "10億円",
+      "Seasonally",
+      "adjusted",
+      "value",
+      "Gross",
+      "domestic",
+      "product",
+      "expenditure",
+      "side",
+      "nominal",
+      "2015",
+      "base",
+      "billion",
+      "yen"
+    ]
+  },
+  {
+    "title": "現金給与総額, 単位: 円",
+    "titleEnglish": "Total cash salary, unit: yen",
+    "tags": [
+      "現金給与総額",
+      "単位",
+      "円",
+      "Total",
+      "cash",
+      "salary",
+      "yen"
+    ]
+  },
+  {
+    "title": "総人口（総数）, 単位: 人",
+    "titleEnglish": "Total population (total number), unit: people",
+    "tags": [
+      "総",
+      "人口",
+      "総数",
+      "単位",
+      "人",
+      "Total",
+      "population",
+      "total",
+      "number",
+      "people"
+    ]
+  },
+  {
+    "title": "（季節調整値）完全失業者（男女計）, 単位: 万人",
+    "titleEnglish": "(Seasonally adjusted value) Unemployed persons (total of men and women), unit: 10,000 people",
+    "tags": [
+      "季節調整値",
+      "完全失業者",
+      "男女",
+      "計",
+      "単位",
+      "万",
+      "人",
+      "Seasonally",
+      "adjusted",
+      "value",
+      "Unemployed",
+      "persons",
+      "total",
+      "of",
+      "men",
+      "and",
+      "women",
+      "10000",
+      "people"
+    ]
+  },
+  {
+    "title": "科学技術研究費, 単位: 百万円",
+    "titleEnglish": "Scientific and technological research funding, unit: million yen",
+    "tags": [
+      "科学技術",
+      "研究",
+      "費",
+      "単位",
+      "百",
+      "万",
+      "円",
+      "Scientific",
+      "and",
+      "techno",
+      "logical",
+      "research",
+      "funding",
+      "million",
+      "yen"
+    ]
+  },
+  {
+    "title": "コールレート（無担保Ｏ／Ｎ物）, 単位: 年%",
+    "titleEnglish": "Call rate (unsecured O/N), unit: annual %",
+    "tags": [
+      "コールレート",
+      "無担保",
+      "Ｏ",
+      "／",
+      "Ｎ",
+      "物",
+      "単位",
+      "年",
+      "Call",
+      "rate",
+      "unsecured",
+      "ON",
+      "annual"
+    ]
+  },
+  {
+    "title": "大学・大学院生, 単位: 人",
+    "titleEnglish": "University/graduate student, unit: person",
+    "tags": [
+      "大学",
+      "・",
+      "大学院生",
+      "単位",
+      "人",
+      "Universitygraduate",
+      "student",
+      "person"
+    ]
+  },
+  {
+    "title": "（季節調整値）鉱工業生産指数 2020年基準, 単位: ",
+    "titleEnglish": "(Seasonally adjusted value) Industrial production index 2020 base, unit:",
+    "tags": [
+      "季節調整値",
+      "鉱工業生産指数",
+      "2020年",
+      "基準",
+      "単位",
+      "Seasonally",
+      "adjusted",
+      "value",
+      "Industrial",
+      "production",
+      "index",
+      "2020",
+      "base"
+    ]
+  },
+  {
+    "title": "日経平均株価, 単位: 円",
+    "titleEnglish": "Nikkei average stock price, unit: yen",
+    "tags": [
+      "日経平均株価",
+      "単位",
+      "円",
+      "Nikkei",
+      "average",
+      "stock",
+      "price",
+      "yen"
+    ]
+  },
+  {
+    "title": "食料自給率（米）, 単位: %",
+    "titleEnglish": "Food self-sufficiency rate (US), unit: %",
+    "tags": [
+      "食料自給率",
+      "米",
+      "単位",
+      "Food",
+      "selfsufficiency",
+      "rate",
+      "US"
+    ]
+  }
+]
